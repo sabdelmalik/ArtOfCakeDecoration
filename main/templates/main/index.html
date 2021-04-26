@@ -1,0 +1,36 @@
+{% extends "main/layout.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <img class="featurette-image img-responsive" src="{% static 'main/images/20190720_172955_001.jpg' %}" style= "margin-bottom: 25px; margin-top: 25px; margin-left: auto; margin-right: auto;" alt="main-logo" width="250" height="300" />
+      </div>
+    </div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Django gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="https://djangobook.com/django-tutorials/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>The Python Package Index is a repository of software for the Python programming language.</p>
+        <p><a class="btn btn-default" href="https://pypi.org/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Microsoft Azure</h2>
+        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
+        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
